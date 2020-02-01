@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from api.v1.views import seats_list_API
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('seats/', seats_list_API),
 ]
